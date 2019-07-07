@@ -19,9 +19,11 @@ for (let i = 0; i < products.length; i++){
  document.getElementById("message").innerHTML =  `<img src=${products[i].imgUrl}></img><br>${products[i].name}<br>${products[i].description}`
 } else {
     console.log(userVal, prodQuery)
+    document.getElementById("message").innerHTML = "Not found"
 }
   }
   prods.setAttribute("style", "display: none;");
+
 
 }
   
