@@ -16,11 +16,13 @@ for (let i = 0; i < products.length; i++){
     const prodQuery = products[i].name.toLowerCase();
 
  if(userVal == prodQuery){
- document.getElementById("message").innerHTML = "Product id " + `${products[i].id}` + " matches your description"
+ document.getElementById("message").innerHTML =  `<img src=${products[i].imgUrl}></img><br>${products[i].name}<br>${products[i].description}`
 } else {
     console.log(userVal, prodQuery)
 }
   }
+  prods.setAttribute("style", "display: none;");
+
 }
   
 
